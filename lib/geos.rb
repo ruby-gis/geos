@@ -19,8 +19,8 @@ end
 readr = GEOS.GEOSWKTReader_create
 writr = GEOS.GEOSWKTWriter_create
 
-geom = GEOS.GEOSWKTReader_read readr, Point.from_lon_lat(1.523, 2.2345).as_wkt
-wkt = GEOS.GEOSWKTWriter_write writr, geom
+geom = GEOS.GEOSWKTReader_read readr.get_pointer(0), Point.from_lon_lat(1.523, 2.2345).as_wkt
+wkt = GEOS.GEOSWKTWriter_write writr.get_pointer(0), geom
 
 puts wkt
 
