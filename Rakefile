@@ -5,11 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "geos"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Ruby FFI interface to the GEOS C API}
+    gem.description = %Q{Provides Ruby access to the the GEOS Spatial library's C API}
     gem.email = "gis@tinypla.net"
     gem.homepage = "http://github.com/ruby-gis/geos"
-    gem.authors = ["Simon Tokumine"]
+    gem.authors = ["Marcos Piccinini", "Simon Tokumine"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
