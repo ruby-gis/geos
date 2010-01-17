@@ -19,7 +19,7 @@ module GEOS
   begin
     ffi_lib(*paths)
   rescue LoadError => e
-    raise("Couldn't find geos.so on our system")
+    raise("Couldn't find geos C API on your system")
   end
 
 
@@ -36,8 +36,8 @@ end
 readr = GEOS.GEOSWKTReader_create
 writr = GEOS.GEOSWKTWriter_create
 
-geom = GEOS.GEOSWKTReader_read readr.get_pointer(0), Point.from_lon_lat(1.523, 2.2345).as_wkt
-wkt = GEOS.GEOSWKTWriter_write writr.get_pointer(0), geom
+geom = GEOS.GEOSWKTReader_read readr, Point.from_lon_lat(1.523, 2.2345).as_wkt
+wkt = GEOS.GEOSWKTWriter_write writr, geom
 
 puts wkt
 
