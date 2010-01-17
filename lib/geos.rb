@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'ffi'
+require 'geo_ruby'
 
 module GEOS
   extend FFI::Library
@@ -13,8 +14,7 @@ module GEOS
   attach_function :GEOSWKTWriter_write,[:pointer, :pointer], :string  
 end
 
-require 'GEOS'
-require 'geo_ruby'
+
 
 include GeoRuby::SimpleFeatures
 
