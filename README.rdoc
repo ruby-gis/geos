@@ -20,7 +20,7 @@ Ruby FFI bindings to the GEOS C API
 
 (The MIT License)
 
-Copyright © 2008 - 2009:
+Copyright © 2010:
 
 * {Simon Tokumine}[http://www.github.com/tokumine]
 * {Marcos Piccinini}[http://www.github.com/nofxx]
