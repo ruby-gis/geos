@@ -5,7 +5,7 @@ describe "Geos" do
   it "should import a geom from WKT" do
     readr = GEOS.GEOSWKTReader_create
     geom = GEOS.GEOSWKTReader_read readr, "POINT(1.523 2.2345)"
-    assert false #TODO: find a way to test this    
+    should false #TODO: find a way to test this    
   end
 
   it "should export a geom to WKT" do
@@ -14,7 +14,7 @@ describe "Geos" do
     
     geom = GEOS.GEOSWKTReader_read readr, "POINT(1.523 2.2345)"
     wkt = GEOS.GEOSWKTWriter_write writr, geom
-    assert false #TODO: find a way to test this
+    should false #TODO: find a way to test this
   end
   
   it "should import a geom from WKB"
