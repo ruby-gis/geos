@@ -3,8 +3,8 @@ Ruby FFI bindings to the GEOS C API
 
 == dependencies
 
-* ffi
-* GeoRuby
+* FFI
+* {GEOS}[http://trac.osgeo.org/geos/] >= 3.1
 
 == Note on Patches/Pull Requests
  
